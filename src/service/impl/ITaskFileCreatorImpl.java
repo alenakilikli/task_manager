@@ -3,8 +3,15 @@ package service.impl;
 import entity.Task;
 
 import java.io.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import static validation.ConverterToTask.convertToTask;
+import static validation.UniquenessValidator.checkUniqeness;
 
 public class ITaskFileCreatorImpl {
 
@@ -16,32 +23,32 @@ public class ITaskFileCreatorImpl {
         File file = new File(baseDir, task.getName() + ".task");
         if (!file.exists()) {
             file.createNewFile();
+
         }
         return file.getPath();
     }
 
-    public static void writeToFile(String string, String filepath) throws IOException {
+    public static void writeToFile(String string, String filepath) throws IOException, ParseException {
         try (PrintWriter pw = new PrintWriter(new FileWriter(filepath,true))) {
             pw.println(string);
-          //  pw.write(string);
-
         }
     }
-    public static Task convertToTask(String line) {
-        String[] p = line.split(" ");
-        return new Task(p[0],  Boolean.parseBoolean(p[1]),p[2]);
-                //,LocalDate.parse(p[3]),LocalDate.parse(p[4])
 
-    }
 
-    public static List<String> readFromTasksFile(String filename) throws IOException {
+    public static List<Task> readFromTasksFile(String filename) throws IOException {
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             List<String> res = new ArrayList<>();
             String line;
             while ((line = br.readLine()) != null) {
                 res.add(line);
             }
-            return res;
+            return res.stream().map(t-> {
+                try {
+                    return convertToTask(t);
+                } catch (ParseException e) {
+                    throw new RuntimeException(e);
+                }
+            }).collect(Collectors.toList());
         }
     }
 

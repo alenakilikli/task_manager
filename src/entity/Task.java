@@ -1,6 +1,8 @@
 package entity;
 
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.util.Date;
 
 public class Task implements Serializable {
 
@@ -9,27 +11,27 @@ public class Task implements Serializable {
     String name;
     boolean IsCompleted;
     String assignedPerson;
-//    LocalDate localDate;
-//    LocalDate completionDate;
+    LocalDate localDate;
+    LocalDate completionDate;
 
-    @Override
-    public String toString() {
-        return "Task{" +
-                "name='" + name + '\'' +
-                ", IsCompleted=" + IsCompleted +
-                ", assignedPerson='" + assignedPerson + '\'' +
-//                ", localDate=" + localDate +
-//                ", completionDate=" + completionDate +
-                '}';
-    }
-
-    public Task(String name, boolean isCompleted, String assignedPerson) {
+    public Task(String name, boolean isCompleted, String assignedPerson, LocalDate localDate, LocalDate completionDate) {
         this.name = name;
         IsCompleted = isCompleted;
         this.assignedPerson = assignedPerson;
-//        this.localDate = localDate;
-//        this.completionDate = completionDate;
+        this.localDate = localDate;
+        this.completionDate = completionDate;
     }
+
+    @Override
+    public String toString() {
+        return
+                " \n "+name  + "   "+IsCompleted +"  "+
+               assignedPerson+" "+
+                 localDate +"  "+
+                completionDate+" "
+                ;
+    }
+
 
     public String getName() {
         return name;
@@ -55,19 +57,19 @@ public class Task implements Serializable {
         this.assignedPerson = assignedPerson;
     }
 
-//    public LocalDate getLocalDate() {
-//        return localDate;
-//    }
-//
-//    public void setLocalDate(LocalDate localDate) {
-//        this.localDate = localDate;
-//    }
-//
-//    public LocalDate getCompletionDate() {
-//        return completionDate;
-//    }
-//
-//    public void setCompletionDate(LocalDate completionDate) {
-//        this.completionDate = completionDate;
-//    }
+    public LocalDate getLocalDate() {
+        return localDate;
+    }
+
+    public void setLocalDate(LocalDate localDate) {
+        this.localDate = localDate;
+    }
+
+    public LocalDate getCompletionDate() {
+        return completionDate;
+    }
+
+    public void setCompletionDate(LocalDate completionDate) {
+        this.completionDate = completionDate;
+    }
 }

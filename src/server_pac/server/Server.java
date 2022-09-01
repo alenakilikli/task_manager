@@ -1,4 +1,4 @@
-package server;
+package server_pac.server;
 
 import entity.Task;
 import service.ITasksListMaker;

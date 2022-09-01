@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2f344de-104b-4d1d-a332-da5fb9047557" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/TasksList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/ServerTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ITaskFileCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ITasksListMaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ITasksOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/impl/ITaskFileCreatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/impl/ITaskOperationsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/impl/ITasksListMakerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validation/UniquenessValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasksList/tasks/listOfTasks.tasks" afterDir="false" />
+    <list default="true" id="f2f344de-104b-4d1d-a332-da5fb9047557" name="Changes" comment="add project">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validation/ConverterToTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/TasksList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server_pac/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/ServerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server_pac/server/ServerTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ITasksListMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ITasksListMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ITasksOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ITasksOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/impl/ITaskFileCreatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/ITaskFileCreatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/impl/ITaskOperationsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/ITaskOperationsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/impl/ITasksListMakerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/ITasksListMakerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validation/UniquenessValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/validation/UniquenessValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasksList/algo.task" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasksList/tasks/listOfTasks.tasks" beforeDir="false" afterPath="$PROJECT_DIR$/tasksList/tasks/listOfTasks.tasks" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +36,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -49,22 +48,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/task_manager",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\task_manager\tasksList\tasks" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="client" />
       <recent name="entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Server">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.Client" />
       <module name="task_manager" />
       <extension name="coverage">
@@ -85,11 +89,11 @@
       </method>
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="server.Server" />
+      <option name="MAIN_CLASS_NAME" value="server_pac.server.Server" />
       <module name="task_manager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="server.*" />
+          <option name="PATTERN" value="server_pac.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,6 +101,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Server" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Client" />
@@ -114,8 +123,26 @@
       <option name="presentableId" value="Default" />
       <updated>1661595774182</updated>
       <workItem from="1661595775976" duration="20085000" />
-      <workItem from="1661672778886" duration="10613000" />
+      <workItem from="1661672778886" duration="12275000" />
+      <workItem from="1661693335256" duration="4891000" />
+      <workItem from="1661967889785" duration="2228000" />
+      <workItem from="1662017518027" duration="416000" />
     </task>
+    <task id="LOCAL-00001" summary="add project">
+      <created>1661687432564</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661687432564</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add project">
+      <created>1661687706186</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661687706186</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,5 +158,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add project" />
+    <option name="LAST_COMMIT_MESSAGE" value="add project" />
   </component>
 </project>

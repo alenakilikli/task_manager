@@ -6,6 +6,7 @@ import service.ITasksListMaker;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.ParseException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +16,7 @@ import static service.impl.ITaskFileCreatorImpl.convertToTask;
 public class ITasksListMakerImpl implements ITasksListMaker {
 
     @Override
-    public List<Task> putTaskToTheList(String str) throws IOException {
+    public List<Task> putTaskToTheList(String str) throws IOException, ParseException {
         List<Task> res;
         try (BufferedReader br = new BufferedReader(new FileReader(str))) {
             res = new ArrayList<>();
